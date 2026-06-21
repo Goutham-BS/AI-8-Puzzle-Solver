@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-Puzzle AI Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-layout">
+        <!-- LEFT PANEL -->
+        <aside class="side-panel" id="left-panel">
+            <div class="panel-header">
+                <span class="panel-label">START STATE</span>
+                <span class="panel-tag">Initial</span>
+            </div>
+            <div class="mini-board-wrapper" id="start-board">
+                <!-- filled by JS -->
+            </div>
+            <div class="panel-info" id="start-info">Shuffle to set</div>
+
+            <div class="divider"></div>
+
+            <div class="panel-header">
+                <span class="panel-label">GOAL STATE</span>
+                <span class="panel-tag goal">Target</span>
+            </div>
+            <div class="mini-board-wrapper" id="goal-board">
+                <!-- filled by JS -->
+            </div>
+            <div class="panel-info">Always fixed</div>
+        </aside>
+
+        <!-- CENTER -->
+        <main class="center-column">
+            <div class="title-block">
+                <h1>8-Puzzle <span class="accent-word">AI</span></h1>
+                <div id="moves-counter" class="subtitle">Moves: 0</div>
+            </div>
+
+            <div class="main-container">
+                <div id="board-wrapper"></div>
+                <div id="status">Initializing...</div>
+                <div class="controls">
+                    <button id="shuffle-btn">⟳ Shuffle</button>
+                    <button id="solve-btn" class="primary">✦ Solve with AI</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- RIGHT PANEL -->
+        <aside class="side-panel" id="right-panel">
+            <div class="panel-header">
+                <span class="panel-label">AI TRACE</span>
+                <span class="panel-tag ai">Live</span>
+            </div>
+
+            <div class="trace-stats" id="trace-stats">
+                <div class="stat-box">
+                    <div class="stat-val" id="stat-total">—</div>
+                    <div class="stat-key">Total Moves</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-val" id="stat-current">—</div>
+                    <div class="stat-key">Current Step</div>
+                </div>
+            </div>
+
+            <div class="steps-list" id="steps-list">
+                <div class="steps-placeholder">Run AI to see step-by-step trace</div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="solver.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
