@@ -101,9 +101,3 @@ npx serve .
 | Complete | ✅ Yes, for all solvable states |
 
 In practice, most random 8-puzzle configurations are solved in under 30 moves and run in milliseconds.
-
----
-
-## License
-
-MIT
