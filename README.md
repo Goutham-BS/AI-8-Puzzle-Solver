@@ -1,6 +1,7 @@
 # 8-Puzzle AI Solver
 
 A browser-based 8-puzzle solver that uses the **A\* search algorithm** with Manhattan distance heuristic to find the optimal solution. Built with vanilla JavaScript — no libraries, no frameworks.
+
 ---
 
 ## Demo
