@@ -1,9 +1,6 @@
 # 8-Puzzle AI Solver
 
 A browser-based 8-puzzle solver that uses the **A\* search algorithm** with Manhattan distance heuristic to find the optimal solution. Built with vanilla JavaScript — no libraries, no frameworks.
-
-![8-Puzzle AI Solver](https://img.shields.io/badge/Algorithm-A*_Search-58a6ff?style=flat-square) ![Language](https://img.shields.io/badge/Language-JavaScript-f0a500?style=flat-square) ![Status](https://img.shields.io/badge/Status-Live-2ecc71?style=flat-square)
-
 ---
 
 ## Demo
